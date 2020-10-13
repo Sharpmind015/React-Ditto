@@ -1,0 +1,14 @@
+@keyframes float {
+  0% {
+    transform: translate(-10%, 10%);
+  }
+  50% {
+    transform: translate(-7%, 4%);
+  }
+  100% {
+    transform: translate(-10%, 10%);
+  }
+}
+.phone {
+  animation: float 3s ease-in-out infinite;
+}

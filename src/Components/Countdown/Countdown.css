@@ -1,0 +1,30 @@
+.countdown h5 span {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.progress-bar-striped {
+  background-color: var(--primary-color);
+}
+.progress {
+  height: 2.1rem;
+  border-radius: 0;
+  width: 70%;
+}
+.progress-bar-striped {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--primary-color),
+    var(--primary-color) 10px,
+    var(--text-color-2) 10px,
+    var(--text-color-2) 20px
+  );
+  animation: progress-bar-stripes 1.1s linear infinite alternate;
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: -40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}

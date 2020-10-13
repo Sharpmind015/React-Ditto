@@ -1,0 +1,20 @@
+header {
+  background: var(--secondary-color);
+  color: var(--text-color-2);
+}
+header h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 900;
+}
+header p {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+header .h-1 {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+header .h-2 {
+  font-size: 5rem;
+}
