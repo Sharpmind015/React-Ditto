@@ -32,11 +32,3 @@
 .countdown h5 {
   font-weight: 700;
 }
-@media screen and (max-width: 600px) {
-  .form-control {
-    width: 90%;
-  }
-  .progress {
-    width: 90%;
-  }
-}

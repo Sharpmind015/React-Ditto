@@ -25,7 +25,7 @@ class Features extends React.Component {
     return (
       <section id="features" className="mt-5">
         <div className="container">
-          <h3 className="h2">How it works</h3>
+          <h3 className="h2 text-center">How it works</h3>
           <p className="mb-4">
             To prove that there's no sorcery involved, we'll show you how it
             works in 3 easy steps:
