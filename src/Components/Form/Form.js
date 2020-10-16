@@ -10,14 +10,14 @@ class Form extends Component {
     const { value } = e.target;
     this.setState({ value: value });
   };
+  submitForm = e => {
+    this.props.handleMsg(e);
+    this.setState(this.initialState);
+  };
   render() {
-    const { handleMsg, msg } = this.props;
-    const submitForm = e => {
-      handleMsg(e);
-      this.setState(this.initialState);
-    };
+    const { handleMsg, isToggle } = this.props;
     return (
-      <form action="#" id="form" onSubmit={submitForm}>
+      <form action="#" id="form" onSubmit={this.submitForm}>
         <div className="form-group">
           <div className="d-flex justify-content-center align-items-center flex-wrap h-5">
             <input
@@ -29,12 +29,16 @@ class Form extends Component {
               value={this.state.value}
               onChange={this.handleInput}
             />
-            <button className="btn btn-subscribe mt-3 py-2">Subscribe</button>
+            <button className="btn btn-subscribe mt-3 py-2">
+              {isToggle ? "Unsubscribe" : "Subscribe"}
+            </button>
           </div>
           <p className="mt-2">
             (You also get some exclusive in-app perks for registering)
           </p>
-          <div className="alert alert-success">{msg}</div>
+          <div className="alert alert-success">
+            {isToggle ? "Subscribed" : ""}
+          </div>
         </div>
       </form>
     );

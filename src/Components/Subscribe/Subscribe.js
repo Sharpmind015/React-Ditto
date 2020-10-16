@@ -5,12 +5,14 @@ import Form from "../Form/Form";
 class Subscribe extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { msg: "" };
+    this.state = {
+      d: false
+    };
     this.handleMsg = this.handleMsg.bind(this);
   }
   handleMsg(e) {
     e.preventDefault();
-    this.setState({ msg: "Subscribed" });
+    this.setState({ isToggle: !this.state.isToggle });
   }
   render() {
     return (
@@ -19,7 +21,7 @@ class Subscribe extends React.Component {
           <div className="text-center">
             <h2>Looks cool right?</h2>
             <h2>Be the first to know when we launch</h2>
-            <Form handleMsg={this.handleMsg} msg={this.state.msg} />
+            <Form handleMsg={this.handleMsg} isToggle={this.state.isToggle} />
           </div>
         </div>
       </section>
