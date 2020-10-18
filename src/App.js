@@ -8,9 +8,6 @@ import Countdown from "./Components/Countdown/Countdown";
 import Social from "./Components/Social/Social";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div>

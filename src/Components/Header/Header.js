@@ -8,7 +8,7 @@ class Header extends React.Component {
       <header className="pt-3">
         <div className="container">
           <nav className="navbar">
-            <a href="#" className="nav-brand">
+            <a href="index.html" className="nav-brand">
               <img src="img/Group 21.svg" alt="Ditto" />
             </a>
           </nav>

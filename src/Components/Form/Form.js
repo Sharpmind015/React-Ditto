@@ -15,7 +15,7 @@ class Form extends Component {
     this.setState(this.initialState);
   };
   render() {
-    const { handleMsg, isToggle } = this.props;
+    const { isToggle } = this.props;
     return (
       <form action="#" id="form" onSubmit={this.submitForm}>
         <div className="form-group">
